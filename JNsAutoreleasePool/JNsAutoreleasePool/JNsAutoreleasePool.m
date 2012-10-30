@@ -22,34 +22,18 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package ch.section6.autoreleasepool;
+#import "ch_section6_autorelease_JNsAutoreleasePool.h"
 
-/**
- * A simple class which instantiates a native <code>NSAutoreleasePool</code> in the current thread.
- * The pool is released when this obejcted is garbage collected.
- * 
- * @author Martin Roth (mhroth@section6.ch)
- */
-public class JNsAutoreleasePool {
+JNIEXPORT jlong JNICALL Java_ch_section6_autorelease_JNsAutoreleasePool_initPool
+    (JNIEnv *env, jclass clazz) {
   
-  /** The pointer to the native <code>NSAutoreleasePool</code>. */
-  private final long poolPtr;
-  
-  public JNsAutoreleasePool() {
-    poolPtr = initPool();
-  }
-  
-  private static native long initPool();
-  
-  private static native void releasePool(long nativePtr);
-  
-  @Override
-  protected void finalize() throws Throwable {
-    try {
-      releasePool(poolPtr);
-    } finally {
-      super.finalize();
-    }
-  }
+  NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+  return (jlong) pool;
+}
 
+JNIEXPORT void JNICALL Java_ch_section6_autorelease_JNsAutoreleasePool_releasePool
+    (JNIEnv *env, jclass clazz, jlong nativePtr) {
+  
+  NSAutoreleasePool *pool = (NSAutoreleasePool *) nativePtr;
+  [pool drain];
 }

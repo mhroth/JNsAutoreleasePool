@@ -1,0 +1,254 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90ECF6BF163FDC49005EFC65 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90ECF6BE163FDC49005EFC65 /* Cocoa.framework */; };
+		90ECF6C9163FDC49005EFC65 /* JNsAutoreleasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 90ECF6C8163FDC49005EFC65 /* JNsAutoreleasePool.m */; };
+		90ECF6D0163FDC68005EFC65 /* ch_section6_autorelease_JNsAutoreleasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 90ECF6CF163FDC68005EFC65 /* ch_section6_autorelease_JNsAutoreleasePool.h */; };
+		90ECF6D2163FDC79005EFC65 /* JavaVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90ECF6D1163FDC79005EFC65 /* JavaVM.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		90ECF6BB163FDC49005EFC65 /* JNsAutoreleasePool.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = JNsAutoreleasePool.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		90ECF6BE163FDC49005EFC65 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		90ECF6C3163FDC49005EFC65 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		90ECF6C6163FDC49005EFC65 /* JNsAutoreleasePool-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JNsAutoreleasePool-Prefix.pch"; sourceTree = "<group>"; };
+		90ECF6C8163FDC49005EFC65 /* JNsAutoreleasePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JNsAutoreleasePool.m; sourceTree = "<group>"; };
+		90ECF6CF163FDC68005EFC65 /* ch_section6_autorelease_JNsAutoreleasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ch_section6_autorelease_JNsAutoreleasePool.h; sourceTree = "<group>"; };
+		90ECF6D1163FDC79005EFC65 /* JavaVM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaVM.framework; path = System/Library/Frameworks/JavaVM.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		90ECF6B8163FDC49005EFC65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ECF6D2163FDC79005EFC65 /* JavaVM.framework in Frameworks */,
+				90ECF6BF163FDC49005EFC65 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90ECF6B0163FDC49005EFC65 = {
+			isa = PBXGroup;
+			children = (
+				90ECF6C4163FDC49005EFC65 /* JNsAutoreleasePool */,
+				90ECF6BD163FDC49005EFC65 /* Frameworks */,
+				90ECF6BC163FDC49005EFC65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		90ECF6BC163FDC49005EFC65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				90ECF6BB163FDC49005EFC65 /* JNsAutoreleasePool.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		90ECF6BD163FDC49005EFC65 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90ECF6D1163FDC79005EFC65 /* JavaVM.framework */,
+				90ECF6BE163FDC49005EFC65 /* Cocoa.framework */,
+				90ECF6C0163FDC49005EFC65 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		90ECF6C0163FDC49005EFC65 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90ECF6C3163FDC49005EFC65 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		90ECF6C4163FDC49005EFC65 /* JNsAutoreleasePool */ = {
+			isa = PBXGroup;
+			children = (
+				90ECF6CF163FDC68005EFC65 /* ch_section6_autorelease_JNsAutoreleasePool.h */,
+				90ECF6C8163FDC49005EFC65 /* JNsAutoreleasePool.m */,
+				90ECF6C5163FDC49005EFC65 /* Supporting Files */,
+			);
+			path = JNsAutoreleasePool;
+			sourceTree = "<group>";
+		};
+		90ECF6C5163FDC49005EFC65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				90ECF6C6163FDC49005EFC65 /* JNsAutoreleasePool-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		90ECF6B9163FDC49005EFC65 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ECF6D0163FDC68005EFC65 /* ch_section6_autorelease_JNsAutoreleasePool.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		90ECF6BA163FDC49005EFC65 /* JNsAutoreleasePool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90ECF6CC163FDC49005EFC65 /* Build configuration list for PBXNativeTarget "JNsAutoreleasePool" */;
+			buildPhases = (
+				90ECF6B7163FDC49005EFC65 /* Sources */,
+				90ECF6B8163FDC49005EFC65 /* Frameworks */,
+				90ECF6B9163FDC49005EFC65 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JNsAutoreleasePool;
+			productName = JNsAutoreleasePool;
+			productReference = 90ECF6BB163FDC49005EFC65 /* JNsAutoreleasePool.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		90ECF6B2163FDC49005EFC65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "-";
+			};
+			buildConfigurationList = 90ECF6B5163FDC49005EFC65 /* Build configuration list for PBXProject "JNsAutoreleasePool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 90ECF6B0163FDC49005EFC65;
+			productRefGroup = 90ECF6BC163FDC49005EFC65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				90ECF6BA163FDC49005EFC65 /* JNsAutoreleasePool */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		90ECF6B7163FDC49005EFC65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90ECF6C9163FDC49005EFC65 /* JNsAutoreleasePool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		90ECF6CA163FDC49005EFC65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		90ECF6CB163FDC49005EFC65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		90ECF6CD163FDC49005EFC65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = jnilib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JNsAutoreleasePool/JNsAutoreleasePool-Prefix.pch";
+				PRODUCT_NAME = libAutoreleasePool;
+			};
+			name = Debug;
+		};
+		90ECF6CE163FDC49005EFC65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_EXTENSION = jnilib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JNsAutoreleasePool/JNsAutoreleasePool-Prefix.pch";
+				PRODUCT_NAME = libAutoreleasePool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		90ECF6B5163FDC49005EFC65 /* Build configuration list for PBXProject "JNsAutoreleasePool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90ECF6CA163FDC49005EFC65 /* Debug */,
+				90ECF6CB163FDC49005EFC65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90ECF6CC163FDC49005EFC65 /* Build configuration list for PBXNativeTarget "JNsAutoreleasePool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90ECF6CD163FDC49005EFC65 /* Debug */,
+				90ECF6CE163FDC49005EFC65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 90ECF6B2163FDC49005EFC65 /* Project object */;
+}
